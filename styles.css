@@ -1,45 +1,97 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
 /* yeet */
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul, ol {
+  color: #ABC;
+  display: inline-block;
+}
 
+picture {
+  width: 50%;
+  height: 50%;
+  grid-column-start: 2;
 }
 
 div p {
-
+  color: #45a519;
 }
 
 div > p {
-
+  color: rgba(230, 87, 21, 0.897)
 }
 
 p + p {
-
+  color: rgb(102, 100, 221);
 }
 
 br ~ strong {
-  
+  color: hsla(0, 54%, 63%, 0.863);
+  position: relative;
+  left: 50px;
+}
+
+br ~ em {
+  position: absolute;
+  left: 50px;
 }
 
 .subgroup {
-
+  color: hsl(0, 100%, 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div.subgroup {
-
+  background-color: darkslategray;
+  border-color: ghostwhite;
+  border-style: dotted;
+  border-width: 0.2em;
+  border-radius: 10%;
+  margin-left: 2em;
+  margin-right: 4em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 5em;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  max-width: 80%;
+  min-width: 25%;
 }
 
 a[href] {
-
+  display: block;
 }
 
-a::hover {
-
+a:hover {
+  color: rgb(102, 100, 221);
+}
+a:active {
+  color: black;
 }
 
 #centered-div {
-
+  margin: 1px 3px 3px 7px;
+  padding: 4px 5px 6px 7px;
+  text-align: center;
+  color: blueviolet;
+  text-decoration: line-through;
 }
+
+#picture-container {
+  display: grid;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+}
+
+
 
